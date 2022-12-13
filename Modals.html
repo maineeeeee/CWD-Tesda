@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Material icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<title>Modals</title>
+</head>
+
+<body class="purple lighten-3 center white-text">
+    <h3><b>Customer Health Declaration Form</b></h3>
+
+<div class="divider"></div>
+
+<br>
+<br>
+
+<div class="container">
+<!-- Modals with Trigger-->
+    <p>The safety of the customers remains as the top priority of the establishment. As the outbreak of Coronavirus disease 2019 (COVID-19) continues, the establishment owners continues to be vigilant in preventing its spread and reduce the potential risk of exposure of everyone in this establishment. Please answer this form with honesty to help us take the necessary precautionary measures to protect you and everyone in the company premises.</p>
+<br>
+    <a class="purple waves-effect waves-light btn modal-trigger" href="#modal1">Do you agree with this?</a>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content purple lighten-1">
+            <h4>Do you agree with this?</h4>
+            <p>The safety of the customers remains as the top priority of the establishment. As the outbreak of Coronavirus disease 2019 (COVID-19) continues, the establishment owners continues to be vigilant in preventing its spread and reduce the potential risk of exposure of everyone in this establishment. Please answer this form with honesty to help us take the necessary precautionary measures to protect you and everyone in the company premises.</p>
+        </div>
+        <div class="modal-footer purple lighten-1">
+            <a href="#!" class="modal-close waves-effect waves-purple btn-flat white-text"><i class="material-icons left">mood</i>Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-purple btn-flat white-text"><i class="material-icons left">mood_bad</i>Disagree</a>
+        </div>
+    </div>
+
+<br>
+<br>
+
+
+    <p>Are you experiencing the following?</p>
+    <!--Modals with fixed footer-->
+    <a class="purple waves-effect waves-light btn modal-trigger" href="#modal2">Fever</a>
+
+    <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content purple lighten-1">
+            <h4>Are you experiencing fever?</h4>
+            <p>A fever is a temporary rise in body temperature. It's one part of an overall response from the body's immune system. A fever is usually caused by an infection. For most children and adults, a fever may be uncomfortable. But it usually isn't a cause for concern.</p>
+        </div>
+            
+        <div class="modal-footer purple lighten-1">
+            <a href="#!" class="modal-close waves-effect waves-purple btn-flat white-text"><i class="material-icons left">done</i>Yes</a>
+            <a href="#!" class="modal-close waves-effect waves-purple btn-flat white-text"><i class="material-icons left">close</i>No</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+<!--Bottom sheet Modals-->
+
+    <p>Are you experiencing other symptoms of COVID-19?</p>
+
+    <a class="purple waves-effect waves-light btn modal-trigger" href="#modal3">Other symptoms of COVID-19</a>
+
+    <div id="modal3" class="modal bottom-sheet">
+        <div class="modal-content purple lighten-1">
+            <h4>Other symptoms of COVID-19</h4>
+            <p><i class="material-icons">done</i>Cough and colds</p>
+            <p><i class="material-icons">done</i>Diarrhea</p>
+            <p><i class="material-icons">done</i>Sorethroat</p>
+            <p><i class="material-icons">done</i>Body pain</p>
+        </div>
+        <div class="modal-footer purple lighten-1">
+            <a href="#!" class="modal-close waves-effect waves-purple btn-flat white-text"><i class="material-icons left">done</i>Yes</a>
+            <a href="#!" class="modal-close waves-effect waves-purple btn-flat white-text"><i class="material-icons left">close</i>No</a>
+        </div>
+    </div>
+
+<!--FIXED ACTION BUTTON (FAB)-->
+    <div class="fixed-action-btn toolbar">
+        <a class="btn-floating btn-large purple darken-2">
+            <i class="large material-icons">dehaze</i>
+        </a>
+        <ul>
+            <li><a href="Trial.html"class=" purple darken-2"><i class="material-icons">home</i></a></li>
+            <li><a href="https://www.lazada.com.ph"class=" purple darken-1"><i class="material-icons">add_shopping_cart</i></a></li>
+            <li><a href="Sliders.html"class=" purple lighten-1"><i class="material-icons">arrow_back</i></a></li>
+            <li><a href="Grid.html"class=" purple lighten-2"><i class="material-icons">arrow_forward</i></a></li>
+        </ul>
+    </div>
+</div>
+
+<div style="height: 2000px;"></div>
+
+<!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+
+<!--Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        //modals
+            $('.modal').modal();
+        //fixed action button
+        $('.fixed-action-btn').floatingActionButton({
+                hoverEnabled: false,
+                toolbarEnabled: true
+            });
+        });
+    </script>
+</body>
+</html>
